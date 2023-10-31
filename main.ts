@@ -26,7 +26,7 @@ input.onButtonPressed(Button.A, function () {
   // setup
   basic.clearScreen()
   loopCounter = 4
-  while (loopCounter <= 4) {
+  while (loopCounter >= 0) {
     basic.pause(1000)
     basic.showNumber(loopCounter)
     loopCounter = loopCounter - 1
