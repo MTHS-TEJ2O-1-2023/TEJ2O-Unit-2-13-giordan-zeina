@@ -24,7 +24,24 @@ basic.showIcon(IconNames.Happy)
 // press "A" button
 input.onButtonPressed(Button.A, function () {
   // setup
-  basic.clearScreen()
+  
+  if (loopCounter == 4) {
+    neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.show()
+
+}
+  if (loopCounter == 3) {
+    neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.show()
+}
   loopCounter = 4
   while (loopCounter >= 0) {
     basic.pause(1000)
