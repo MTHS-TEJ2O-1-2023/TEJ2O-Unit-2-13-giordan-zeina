@@ -78,4 +78,5 @@ input.onButtonPressed(Button.A, function () {
       neopixelStrip.show()
     }
     loopCounter = loopCounter - 1
-  }})
+  } 
+  })
